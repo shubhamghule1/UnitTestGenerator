@@ -166,12 +166,6 @@ async def generate_unit_test_from_URL(request: Request, backgroundTasks: Backgro
         if not os.path.exists(zip_file_path):
             raise HTTPException(status_code=500, detail="Failed to create the zip file")
 
-        # if os.path.exists():
-        #     print(f"Deleting {repo_dir} Repo")
-        #     shutil.rmtree(repo_dir)
-        #
-
-
         # Schedule the cleanup task to run in the background
         backgroundTasks.add_task(delete_dir_after_send, repo_dir)
         backgroundTasks.add_task(delete_dir_after_send, test_dir)
