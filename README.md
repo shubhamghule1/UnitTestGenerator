@@ -49,4 +49,5 @@ Returns repo.zip file with unit test for all the functions in the given Github R
 - Dynamic importing the functions in test files will also reduce LLM output token size and in turn will reduce cost.
 - Currently the repo cloning, test repo generation and test zip generation is done in current working directory and it is cleaned after downloading .zip file by client. Better approach would be to perform repo cloning, test generation and test zip generation in virtual directory. Also add a timeout for zip download, after which it will be cleaned automatically in order to save server resources. 
 - Add Rate Limiting.
+- Add logging for debugging instead of print statements.
 
