@@ -4,11 +4,12 @@
 This Project Takes GitHub URL as input and Generates Unit Test for each function in the given GitHub Repo.
 
 ## Steps to run the Project
-- Clone the Repo.
+- Clone the repo.
+- Change Directory to repo directory
+- Run 'pip install -r requirements.txt' 
 - Create .env file.
 - Add OPENAI_API_KEY='<Your_OPENAI_API_KEY>' in .env file.
 - run main.py file.
-
 
 
 ## API Reference
