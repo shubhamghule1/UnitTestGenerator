@@ -3,6 +3,8 @@
 
 This Project Takes GitHub URL as input and Generates Unit Test for each function in the given GitHub Repo.
 
+![My figure](UTG.png)
+
 ## Steps to run the Project
 - Clone the repo.
 - Change Directory to repo directory
