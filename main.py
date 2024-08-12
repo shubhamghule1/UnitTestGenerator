@@ -113,20 +113,11 @@ async def generate_unit_test_from_URL(request: Request, backgroundTasks: Backgro
 
         repo_name = get_repo_name_from_url(repo_url)
         repo_dir = repo_name
-
-        # Remove existing repository directory if it exists
-        if os.path.exists(repo_dir):
-            print(f"{repo_dir} Exists. Deleting Repo and cloning again")
-            shutil.rmtree(repo_dir)
         clone_repo(repo_url)  # Clone the repository
 
         print("Clone Repo completed Successfully")
 
         test_dir = f"{repo_name}_tests"
-        # Remove existing test directory if it exists
-        if os.path.exists(test_dir):
-            print(f"{test_dir} Exists. Deleting test directory")
-            shutil.rmtree(test_dir)
         os.makedirs(test_dir, exist_ok=True)
 
         functions = extract_functions_from_repo(repo_dir)
