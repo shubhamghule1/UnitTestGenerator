@@ -72,7 +72,6 @@
 
             if (response.ok) {
                 const blob = await response.blob();
-                console.log("****",blob);
                 const url = window.URL.createObjectURL(blob);
 
                 // Hide generate button and show download button
@@ -101,7 +100,6 @@
                 generateBtn.disabled = false;
             }
         } catch (error) {
-            console.error('Fetch error:', error);
             alert('An error occurred. Please try again.');
             generateBtn.innerText = 'Generate';
             generateBtn.disabled = false;
