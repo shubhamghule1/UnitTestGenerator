@@ -1,7 +1,7 @@
 
-# Unit Test Generator for Python
+# AI-powered Unit Test Case Generator for Python
 
-AI-powered Unit Test Case generator for Python code. This Project Takes GitHub URL as input and Generates Unit Test for each python function in the given GitHub Repo.
+This Project Takes GitHub URL as input and Generates Unit Test for each python function in the given GitHub Repo.
 
 ![My figure](UTG.png)
 
